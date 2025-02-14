@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Jacket Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="Logo">
+                <a href="index.html">
+                    <img src="Logo/bgrlogo.png" width="125px" alt="F1 Shop Logo">
+                </a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="Logo/shopping-cart.png" width="30px" height="30px" alt="Cart">
+            </a>
+            <img src="Logo/hamburger.png" class="menu-icon" onclick="menutoggle()" alt="Menu">
+        </div>
+    </div>
+    
+    <!-- --------------Cart Item Details------------------ -->
+     <br><br>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub-total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Aston-Martin/Bottle-Front.png">
+                        <div>
+                            <p>BWT Alpine F1 Team 2023 Rain Jacket</p>
+                            <small>£20.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" id="quantity" value="1" min="1" onchange="calculateSubtotal()"></td>
+
+                <td id="subtotal">£20.00</td>
+            </tr>
+        </table>
+
+        <!-- Total Price Section -->
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="totalSubtotal">£20.00</td>
+                </tr>
+                <tr>
+                    <td>Tax (13%)</td>
+                    <td id="tax">£2.6</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total">£22.6</td>
+                </tr>
+            </table>
+            
+            <button onclick="showAlert()" class="alert-button">Purchase</button> <!-- Fixed Button -->
+        </div>
+    </div>
+
+    <!-- ---------- Footer ---------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our app</h3>
+                    <p>Download our app for Android and Ios.</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/games?hl=en">
+                        <img src="Logo/GPS.png">
+                    </a>
+                    <a href="https://www.apple.com/app-store/">
+                        <img src="Logo/APS.png">
+                    </a>
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="Logo/Formula1.png">
+                    <p>Next Race: Bahrain International Circuit, Bahrain - March 2, 2025</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li><a href="https://tickets.formula1.com/en">Coupons</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Return Policy</a></li>
+                        <li>Join US</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100005168326157">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/jeebesh_khatri/">Instagram</a></li>
+                        <li><a href="https://github.com/Jeebeshkhatri">GitHub</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+            <hr>
+                <p class="Copyright">Copyrights © 2025 Jeebesh Khatri. All Rights Reserved.</p>
+        </div>
+    <!-- ---------- JavaScript for Toggle Menu ---------- -->
+    <script>
+        function menutoggle() {
+            var menuItems = document.getElementById("menuitems");
+            menuItems.classList.toggle("active");
+        }
+
+        function calculateSubtotal() {
+            var quantity = document.getElementById("quantity").value;
+            var price = 20; // Price of one jacket in dollars
+            var subtotal = quantity * price;
+            var tax = subtotal * 0.13; // 13% tax
+            document.getElementById("subtotal").innerText = "£" + subtotal.toFixed(2);
+            document.getElementById("totalSubtotal").innerText = "£" + subtotal.toFixed(2);
+            document.getElementById("tax").innerText = "£" + tax.toFixed(2);
+            document.getElementById("total").innerText = "£" + (subtotal + tax).toFixed(2);
+        }
+
+        function showAlert() {
+            alert("Thank you for the purchase!");
+        }
+    </script>
+</body>
+</html>

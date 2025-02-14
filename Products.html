@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - F1 Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="Logo">
+                <a href="index.html">
+                    <img src="Logo/bgrlogo.png" width="125px" alt="F1 Shop Logo">
+                </a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="Logo/shopping-cart (1).png" width="30px" height="30px" alt="Cart">
+            </a>
+            <img src="Logo/hamburger.png" class="menu-icon" onclick="menutoggle()" alt="Menu">
+        </div>
+    </div>
+
+
+<!-- ---------- Featured Products ---------- -->
+<div class="small-container">
+    <br>
+    <h2 class="products-title"></h2>
+    <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+            <option>Default Sorting</option>
+            <option>Sort by Price</option>
+            <option>Sort by Popularity</option>
+            <option>Sort by Ratings</option>
+            <option>Default Sales</option>
+        </select>
+    </div>
+
+
+    <!-- First row with 4 items -->
+    <div class="row">
+        <a href="Senna.html">
+        <div class="col-4">
+            <img src="Helmets/AyrtonSenna1994MiniHelmet_1.png" alt="Ayrton Senna 1994 Helmet">
+            <h4>Ayrton Senna 1994 Helmet</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£128.00</p>
+        </a>
+        </div>
+
+        <a href="Mclaren-helmet.html">
+        <div class="col-4">
+            <img src="Helmets/Lando-Helmet-3.png" alt="Lando Norris Helmet">
+            <h4>Lando Norris 1:2 Scale Helmet - Singapore GP</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£135.00</p>
+        </a>
+        </div>
+
+
+        <div class="col-4">
+            <a href="Ferrari-Softshell-Jacket.html">
+            <img src="Suits/Ferrari-Jacket1.png" alt="Ferrari Red Softshell Jacket">
+            <h4>Ferrari Red Fan 2024 Softshell Jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£89.00</p>
+        </a>
+
+
+        </div>
+        <a href="Red-bull-jacket.html">
+        <div class="col-4">
+            <img src="Suits/Redbull.png" alt="Red Bull Racing Hoodie">
+            <h4>Red Bull Racing 2024 Team Full Zip Hoodie</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£58.00</p>
+        </a>
+        </div>  
+    </div>
+
+    <!-- Second row with 4 items -->
+    <div class="row">
+        <a href="Kick-sauber-helmet.html">
+        <div class="col-4">
+            <img src="Helmets/Zhou-helmet.png">
+            <h4>Kick Sauber F1 Team Zhou Guanyu 2024 1:5 Spark Model Helmet</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£45.00</p>
+            </a>
+        </div>
+
+        <a href="Aston-Martin-Water-Bottle.html">
+        <div class="col-4">
+            <img src="Helmets/Aston-martin.png">
+            <h4>Aston Martin Aramco F1 Waterbottle</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£20.00</p>
+        </a>
+        </div>
+
+        <a href="Haas-polo.html">
+        <div class="col-4">
+            <img src="Helmets/Haas-polo.png">
+            <h4>Haas F1 Moneygram 2024 Team Polo</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i> 
+            </div>
+            <p style="font-weight: bold; color: black;">£58.00</p>
+        </a>
+        </div>
+
+        <a href="Mercedes-cap.html">
+        <div class="col-4">
+            <img src="Helmets/Mercedes-cap.png">
+            <h4>Mercedes AMG Petronas F1 2024 Team Cap - White</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£31.00</p>
+        </a>
+        </div>
+    </div>
+
+    <!-- Third row with 4 items -->
+    <div class="row">
+        <a href="Red-bull-cap.html">
+        <div class="col-4">
+            <img src="Helmets/Redbullcap.png">
+            <h4>Red Bull Racing 2024 New Era Max Verstappen 9FORTY Cap - Kids</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£31.00</p>
+        </a>
+        </div>
+
+        <a href="Alpine-Jacket.html">
+        <div class="col-4">
+            <img src="Helmets/Alpine.png">
+            <h4>BWT Alpine F1 Team 2023 Rain Jacket</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£49.00</p>
+        </a>
+        </div>
+
+        <a href="VisaCarB-Hoodie.html">
+        <div class="col-4">
+            <img src="Helmets/Vcarb.jpg">
+            <h4>RB Cash App 2024 Team Full Zip Hoodie</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£78.00</p>
+        </a>
+        </div>
+
+        <a href="Williams-Jacket.html">
+        <div class="col-4">
+            <img src="Helmets/Williams.png">
+            <h4>Williams Racing 2024 1/4 Zip Midlayer</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+            </div>
+            <p style="font-weight: bold; color: black;">£78.00</p>
+        </a>
+        </div>
+
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------- Footer ---------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download our app</h3>
+                <p>Download our app for Android and Ios.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/games?hl=en">
+                    <img src="Logo/GPS.png">
+                </a>
+                <a href="https://www.apple.com/app-store/">
+                    <img src="Logo/APS.png">
+                </a>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="Logo/Formula1.png">
+                <p>Next Race: Bahrain International Circuit, Bahrain - March 2, 2025</p>
+            </div>
+            <div class="footer-col3">
+                <h3>Useful Links:</h3>
+                <ul>
+                    <li><a href="https://tickets.formula1.com/en">Coupons</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Return Policy</a></li>
+                    <li>Join US</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Follow Us:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100005168326157">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/jeebesh_khatri/">Instagram</a></li>
+                    <li><a href="https://github.com/Jeebeshkhatri">GitHub</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
+                
+                </ul>
+            </div>
+        </div>
+        <hr>
+            <p class="Copyright">Copyrights © 2025 Jeebesh Khatri. All Rights Reserved.</p>
+    </div>
+
+<!-- ---------- JavaScript for Toggle Menu ---------- -->
+<script>
+    function menutoggle() {
+        var menuItems = document.getElementById("menuitems");
+        menuItems.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
